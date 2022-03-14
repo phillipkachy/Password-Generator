@@ -23,3 +23,8 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
+
+Link to website: 
+https://phillipkachy.github.io/Password-Generator/
+
+Screenshots of website:
