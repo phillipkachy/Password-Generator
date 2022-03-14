@@ -4,6 +4,17 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+function generatePassword() {
+console.log('you clicked the button');
+
+//Prompt the user
+//Password lenght
+//Lowercase, Uppercase, Numbers, Symbols
+//Display password
+
+return'Generated password will go here!'
+};
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -12,30 +23,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
-// Creating prompt
-function generatePassword() {
-  return prompt('Hello');
-}
-// lower case
-function generateLower() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-}
-// upper case
-function generateUpper() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-// random number
-function generateNumber() {
-  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-}
-// random symbol
-function generateSymbol() {
-  const symbols = '!@#$%^&*';
-  return symbols[Math.floor(Math.random() * symbols.length)];
-}
 
-console.log(generatePassword());
-console.log(generateLower() + generateUpper() + generateNumber() + generateSymbol());
 
 
 // Add event listener to generate button
