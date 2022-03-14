@@ -12,11 +12,34 @@ var lowerCase = ['q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h'
 var upperCase = ['Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','Z','X','C','V','B','N','M'];
 var number = ['1','2','3','4','5','6','7','8','9','0'];
 var charLenght = 8;
+var choiceArr = [];
 //Prompt the user
 function getPrompts() {
+  choiceArr = [];
 charLenght = parseInt(prompt('Insert password length'));
 
-if(isNaN(charLenght));
+if(isNaN(charLenght) || charLenght < 8 || charLenght > 128) {
+alert('Character has to be a number, 8 - 128 digits.');
+return false;
+}
+
+if (confirm('Would you like lowercase')) {
+choiceArr = choiceArr.concat(lowerCase);
+}
+
+if (confirm('Would you like uppercase')) {
+  choiceArr = choiceArr.concat(upperCase);
+  }
+
+  if (confirm('Would you like special characters')) {
+    choiceArr = choiceArr.concat(specialChar);
+    }
+
+    if (confirm('Would you like numbers')) {
+      choiceArr = choiceArr.concat(number);
+      }
+
+      return true;
 }
 //Display password
 
