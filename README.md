@@ -28,3 +28,4 @@ Link to website:
 https://phillipkachy.github.io/Password-Generator/
 
 Screenshots of website:
+![Capturepassword](https://user-images.githubusercontent.com/98828210/158099267-72e3532a-1394-477e-9eb7-eb28f792c624.JPG)
